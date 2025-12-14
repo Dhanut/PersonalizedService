@@ -4,6 +4,7 @@ A Spring Boot backend service that manages product metadata and personalized sho
 The system supports internal APIs for data ingestion and external APIs for retrieving personalized product recommendations with filtering and pagination.
 
 📌 Features
+
 ✅ Product Metadata Management
 
 Create product metadata (productId, category, brand)
@@ -51,6 +52,8 @@ src/main/java/com/assignment/personalized_app
 ├── entity
 ├── dto
 └── PersonalizedAppApplication.java
+<img width="553" height="348" alt="image" src="https://github.com/user-attachments/assets/89d1c831-02b4-404d-a8e3-5ff1ff68c106" />
+
 
 ▶️ Running the Application
 
