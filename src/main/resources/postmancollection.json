@@ -1,0 +1,70 @@
+{
+  "info": {
+    "name": "Personalized Shopper API",
+    "_postman_id": "b6b0c2c0-xxxx-xxxx-xxxx-xxxxxxxxxxxx",
+    "description": "Postman collection for Internal and External Shopper APIs",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+  },
+  "item": [
+    {
+      "name": "Internal - Save Shopper Shelf",
+      "request": {
+        "method": "POST",
+        "header": [
+          { "key": "Content-Type", "value": "application/json" }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "{\n  \"shopperId\": \"shopper123\",\n  \"shelf\": [\n    {\n      \"productId\": \"prod001\",\n      \"relevancyScore\": 0.95\n    },\n    {\n      \"productId\": \"prod002\",\n      \"relevancyScore\": 0.87\n    }\n  ]\n}"
+        },
+        "url": {
+          "raw": "http://localhost:8080/internal/shopper-products",
+          "protocol": "http",
+          "host": ["localhost"],
+          "port": "8080",
+          "path": ["internal", "shopper-products"]
+        }
+      }
+    },
+    {
+      "name": "Internal - Save Product Metadata",
+      "request": {
+        "method": "POST",
+        "header": [
+          { "key": "Content-Type", "value": "application/json" }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "{\n  \"productId\": \"prod001\",\n  \"category\": \"Electronics\",\n  \"brand\": \"BrandA\"\n}"
+        },
+        "url": {
+          "raw": "http://localhost:8080/internal/product-metadata",
+          "protocol": "http",
+          "host": ["localhost"],
+          "port": "8080",
+          "path": ["internal", "product-metadata"]
+        }
+      }
+    },
+    {
+      "name": "External - Get Shopper Products",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "http://localhost:8080/external/shopper123/products?category=Electronics&brand=BrandA&limit=10&page=0",
+          "protocol": "http",
+          "host": ["localhost"],
+          "port": "8080",
+          "path": ["external", "shopper123", "products"],
+          "query": [
+            { "key": "category", "value": "Electronics" },
+            { "key": "brand", "value": "BrandA" },
+            { "key": "limit", "value": "10" },
+            { "key": "page", "value": "0" }
+          ]
+        }
+      }
+    }
+  ]
+}
