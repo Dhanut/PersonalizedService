@@ -8,13 +8,18 @@ The system supports internal APIs for data ingestion and external APIs for retri
 ✅ Product Metadata Management
 
 Create product metadata (productId, category, brand)
+
 Update existing product metadata
+
 Prevent duplicate product entries
+
 
 ✅ Shopper Shelf Management
 
 Create a personalized shelf for a shopper
+
 Update shelf by:
+
 Inserting new products
 Updating relevancy scores
 Skipping invalid products
@@ -41,17 +46,7 @@ Maven
 
 📂 Project Structure
 
-src/main/java/com/assignment/personalized_app
-├── controller
-│   ├── InternalController.java
-│   └── ExternalController.java
-├── service
-│   ├── ProductServiceImpl.java
-│   └── ShopperServiceImpl.java
-├── repository
-├── entity
-├── dto
-└── PersonalizedAppApplication.java
+
 <img width="553" height="348" alt="image" src="https://github.com/user-attachments/assets/89d1c831-02b4-404d-a8e3-5ff1ff68c106" />
 
 
