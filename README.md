@@ -38,7 +38,7 @@ Brand filter
 
 Pagination support
 
-Optimized queries using pagination and joins
+Optimized queries using pagination and joins and indexing
 
 🧱 Tech Stack
 
